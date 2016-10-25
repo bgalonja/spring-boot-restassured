@@ -8,4 +8,5 @@ import org.springframework.stereotype.Service;
 public interface ItemService {
 
 	List<Item> findAll();
+	Item saveItem(Item item);
 }
