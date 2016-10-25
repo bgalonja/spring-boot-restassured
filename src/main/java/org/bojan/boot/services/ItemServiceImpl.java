@@ -19,6 +19,8 @@ public class ItemServiceImpl implements ItemService {
 
 	public Item saveItem(Item item) {
 		// TODO Auto-generated method stub
-		return itemRepository.save(item);
+		return itemRepository.saveAndFlush(item);
 	}
+	
+	
 }
