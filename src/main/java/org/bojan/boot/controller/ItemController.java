@@ -27,9 +27,10 @@ public class ItemController {
 	public Item createItem(@RequestBody Item item){
 		return itemService.saveItem(item);
 	}
-	@RequestMapping(value="/items/{id}")
+	@RequestMapping(value="/{id}", method=RequestMethod.PUT)
 	public Item update(@RequestBody Item updatedItem, @PathVariable("id") Integer id){
 		 updatedItem.setId(id);
 		 return itemService.saveItem(updatedItem);
+	}
 		
 }
