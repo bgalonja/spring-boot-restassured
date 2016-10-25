@@ -3,4 +3,4 @@
 .settings
 /target/*
 .git/
-.classpath/
+.classpath
